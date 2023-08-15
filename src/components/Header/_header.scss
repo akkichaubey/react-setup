@@ -1,0 +1,112 @@
+@import "../../assets/scss/variables";
+
+header {
+  background: $soapstone;
+  border-top: 1px solid $primary;
+  border-bottom: 1px solid $primary;
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 100%;
+  }
+  .head-logo {
+    padding: 22px 65px 22px 32px;
+    border-right: 1px solid $primary;
+    a {
+      color: $primary;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1;
+      display: inline-flex;
+      align-items: center;
+      span {
+        width: 12px;
+        height: 12px;
+        font-size: 0;
+        margin: 0 3px;
+        display: inline-block;
+        color: $secondary;
+        background: $secondary;
+        @include transform(rotate(-15deg));
+        @include transition(all 0.3s ease-in-out);
+      }
+      &:hover {
+        span {
+          @include transform(translateY(-8px) rotate(-15deg));
+        }
+      }
+    }
+  }
+  .head-login {
+    padding: 0 37px;
+    .btn {
+      &::after {
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+  .menu-bar {
+    padding: 20px 30px 20px 45px;
+    border-left: 1px solid $primary;
+    button {
+      width: 29px;
+      height: 28px;
+      background: none;
+      border: 0;
+      border-radius: 0;
+      position: relative;
+      display: flex;
+      align-items: center;
+      span {
+        width: 100%;
+        height: 2px;
+        display: inline-block;
+        color: $primary;
+        background: currentColor;
+        position: relative;
+        &::after,
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          background: currentColor;
+        }
+        &::after {
+          top: -11px;
+        }
+        &::before {
+          top: 11px;
+        }
+      }
+    }
+  }
+  .head-spotlight {
+    padding: 22px 25px 22px 38px;
+  }
+  .head-left {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+  .head-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  @include breakpoint(max, 1024) {
+    :is(.head-logo, .head-login) {
+      display: none;
+    }
+    .head-spotlight {
+      padding: 22px 25px 22px 7px;
+    }
+    .menu-bar {
+      padding: 20px 15px 20px 30px;
+    }
+  }
+}

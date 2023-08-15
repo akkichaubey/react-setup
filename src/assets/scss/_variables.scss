@@ -1,0 +1,72 @@
+// Override Bootstrap default variables here
+// Do not edit any of the files in /vendor/bootstrap/scss/!
+
+@import "./mixins";
+
+// Color Variables
+$white: #fff !default;
+$gray-50: #fafafa !default;
+$gray-100: #f5f5f5 !default;
+$gray-200: #eeeeee !default;
+$gray-300: #e0e0e0 !default;
+$gray-400: #bdbdbd !default;
+$gray-500: #9e9e9e !default;
+$gray-600: #757575 !default;
+$gray-700: #616161 !default;
+$gray-800: #424242 !default;
+$gray-900: #212121 !default;
+$black: #000 !default;
+
+// scss-docs-start theme-colors-map
+$primary: #000000;
+$secondary: #0002ff;
+$soapstone: #fffcf8;
+
+$egg-sour: #fff3e3;
+$white-smoke: #f4f5f7;
+$linen: #f9f1e7;
+$star-dust: #9f9f9f;
+$yellow: #ffc700;
+$red: #ff0000;
+
+$dark-50: #f5f5f5;
+$dark-100: #e9e9e9;
+$dark-200: #d9d9d9;
+$dark-300: #c4c4c4;
+$dark-400: #9e9e9e;
+$dark-500: #7c7c7c;
+$dark-600: #565656;
+$dark-700: #444444;
+$dark-800: #272727;
+$quill-grey: #d4d4d4;
+
+// Brand Colors
+$brand-google: #ea4335 !default;
+$brand-facebook: #3b5998 !default;
+$brand-twitter: #1da1f2 !default;
+$brand-linkedin: #0a66c2 !default;
+$brand-instagram: #c32aa3 !default;
+$brand-github: #000000 !default;
+$brand-pinterest: #bd081c !default;
+$brand-whatsapp: #25d366 !default;
+$brand-behance: #1769ff !default;
+$brand-dribbble: #ea4c89 !default;
+$brand-youtube: #ff0000 !default;
+// theme colors
+
+// Typography
+$monsoon: #898989;
+$nobel: #b0b0b0;
+$light-pink: #e97171;
+$topaz: #2ec1ac;
+$body-color: #4d4d4d !default;
+$dark-color: #1c1c1c;
+$cloud-color: #c4c4c4;
+$grey: #777777;
+$light-grey: #f1f1f1;
+$light-blue: #0dbbfc;
+$grey-blue: #8fb6d5;
+
+// font
+$font-primary: "Poppins", sans-serif;
+$font-secondary: "Poppins", sans-serif;

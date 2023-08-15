@@ -1,0 +1,36 @@
+input[type="submit"] {
+	-webkit-appearance: none;
+}
+input {
+	outline: none;
+	resize: none;
+	box-shadow: none;
+}
+textarea {
+	outline: none;
+	resize: none;
+	box-shadow: none;
+}
+select {
+	outline: none;
+	resize: none;
+	box-shadow: none;
+	border: 0;
+	appearance: none;
+	-webkit-appearance: none;
+	&:focus {
+		outline: none;
+	}
+}
+
+input {
+	&:-webkit-autofill {
+		-webkit-text-fill-color: $black !important;
+	}
+	&:-webkit-autofill,
+	&:-webkit-autofill:hover,
+	&:-webkit-autofill:focus,
+	&:-webkit-autofill:active {
+		-webkit-box-shadow: 0 0 0 50px $white inset !important;
+	}
+}

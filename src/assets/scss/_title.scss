@@ -1,0 +1,47 @@
+.h1,
+.h2,
+.h3 {
+  line-height: 1.5;
+}
+.h1 {
+  font-size: 52px;
+}
+.h2 {
+  font-size: 32px;
+}
+.h3 {
+  font-size: 24px;
+}
+
+.title {
+  padding: 0 0 32px;
+  :is(.h2, h2) {
+    font-weight: 700;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+@include breakpoint(max, 1280) {
+  .h1 {
+    font-size: 46px;
+  }
+}
+@include breakpoint(max, 991) {
+  .h1 {
+    font-size: 38px;
+  }
+}
+
+@include breakpoint(max, 767) {
+  .h1 {
+    font-size: 30px;
+  }
+  .h2 {
+    font-size: 28px;
+  }
+  .title {
+    padding: 0 0 22px;
+  }
+}

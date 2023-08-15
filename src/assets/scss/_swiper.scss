@@ -1,0 +1,14 @@
+.swiper-arrow {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  color: $white;
+  cursor: pointer;
+  background: $primary;
+  @include border-radius(100%);
+  @include transition(all 0.3s ease-in-out);
+  &:hover {
+    background: $secondary;
+  }
+}

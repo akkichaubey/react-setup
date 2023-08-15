@@ -1,0 +1,71 @@
+.section {
+  position: relative;
+}
+.container {
+  width: 100%;
+  max-width: 1266px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.text-start {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-end {
+  text-align: right;
+}
+
+.d-flex {
+  display: flex;
+}
+.d-inline-flex {
+  display: inline-flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.row {
+  @extend .d-flex, .flex-wrap;
+  margin: 0 -15px;
+  .col {
+    padding: 0 15px;
+  }
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+.pb-50 {
+  padding-bottom: 50px;
+}
+.py-50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@include breakpoint(max, 1280) {
+}
+
+@include breakpoint(max, 1024) {
+  .d-md-none {
+    display: none !important;
+  }
+}
+
+@include breakpoint(max, 991) {
+}
+
+@include breakpoint(max, 767) {
+  .pt-50,
+  .py-50 {
+    padding-top: 35px;
+  }
+  .pb-50,
+  .py-50 {
+    padding-bottom: 35px;
+  }
+}
