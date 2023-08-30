@@ -1,6 +1,9 @@
 import React from "react";
-import HeroBanner from "../../components/heroBanner/HeroBanner";
 
-const Home = () => <HeroBanner />;
+const Home = () => (
+  <>
+    <div className="home">Home</div>
+  </>
+);
 
 export default Home;
